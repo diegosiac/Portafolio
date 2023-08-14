@@ -1,0 +1,40 @@
+.section {
+    width: 100%;
+    background-color: var(--palete--dark);
+    display: flex;
+    flex-direction: column;
+    color: var(--text--color);
+    align-items: center;
+    font-family: var(--font--general);
+}
+
+.section__Header {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section__Header h2{
+    flex-grow: 0.04;
+    font-size: var(--text--size-xxl);
+}
+
+.section__Header span{
+    background-color: var(--palete);
+    height: 1.1px;
+}
+
+.section__Header .animation__span {
+    animation: slidein 1.5s ease-in both;
+}
+
+@keyframes slidein {
+    from {
+        flex-grow: 0;
+    }
+  
+    to {
+        flex-grow: 2;
+    }
+}

@@ -1,0 +1,12 @@
+.proyects__Container {
+    width: 95%;
+    padding: 15px 0 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyects__FoldersContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

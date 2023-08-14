@@ -1,0 +1,10 @@
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--palete--dark);
+    color: var(--text--color);
+    font-family: var(--font--general);
+    font-size: 14px;
+}

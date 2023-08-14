@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+:root{
+    --palete--dark: #242621;
+    --palete: #6e6e5f;
+    --palete--light: #bfb6a4;
+    --palete--lightest: #f5ecda;
+    
+    --white--dark: #d1cbbe;
+    --white: #f5ecda;
+    --white--light: #e4dccc;
+
+
+    --folder--top: #666659;
+    --folder--section: #5c5c50;
+
+    --text--size-xxs: 12px;
+    --text--size-xs: 13px;
+    --text--size-md: 14px;
+    --text--size-lg: 16.5px;
+    --text--size-xl: 20px;
+    --text--size-xxl: 35px;
+    --text--heading: 100px;
+    --text--heading--pc: 200px;
+    
+    /* --text--color-dark: #fff; */
+    --text--color: #7e7e6e;
+    --text--color-ligth: #99998c;
+    /* --text--color-lightest: #fff; */
+
+    --font--general: 'Chivo', sans-serif;
+};

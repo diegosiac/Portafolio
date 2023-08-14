@@ -1,0 +1,62 @@
+.contact__Container {
+    width: 95%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact__p {
+    font-size: var(--text--size-xl);
+    margin-bottom: 30px;
+}
+
+.contact__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: max-content;
+    padding-right: 50px;
+}
+
+.contact__Icons {
+    margin: 0 0 30px;
+    display: flex;
+}
+
+.contact__Icons a{
+    padding: 0 10px;
+    font-size: var(--text--size-xl);
+    color: var(--text--color);
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.contact__Icons a:hover {
+    text-decoration: underline;
+}
+
+.contact__Social {
+    margin-left: 5px;
+}
+
+.contact__email {
+    width: max-content;
+    text-align: center;
+    font-size: var(--text--size-xl);
+}
+
+.contact__email button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text--color);
+}
+
+.email__copy {
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity .3s,transform .3s;
+}
