@@ -4,6 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 25px;
+    
 }
 
 .contact__p {
@@ -15,9 +17,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    justify-content: center;
     width: max-content;
-    padding-right: 50px;
 }
 
 .contact__Icons {
@@ -28,7 +29,7 @@
 .contact__Icons a{
     padding: 0 10px;
     font-size: var(--text--size-xl);
-    color: var(--text--color);
+    color: var(--text-icons);
     align-items: center;
     display: flex;
     text-decoration: none;
@@ -52,11 +53,19 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: var(--text--color);
+    color: var(--text-icons);
 }
 
 .email__copy {
     opacity: 0;
     text-transform: uppercase;
     transition: opacity .3s,transform .3s;
+}
+
+
+
+@media (max-width: 620px){
+    .contact__Container {
+        justify-content: center;
+    }
 }

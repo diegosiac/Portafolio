@@ -4,11 +4,9 @@ import './header.css';
 
 export const Header = () => {
   return (
-    <header className='header'>
+    <header className='header border-bottom'>
       <div className='header__container animate__animated animate__fadeInDown'>
         
-        <h2>Diego Cruz</h2>
-
         <div className='header__Title animate__animated animate__fadeInUpBig'>
           <h1 className='mobile'> 
             <span>F</span>
@@ -61,15 +59,13 @@ export const Header = () => {
         <div className='header__info animate__animated animate__fadeInUp'>
           <span className='info__Icon'>
             <KeyboardDoubleArrowDownIcon sx={{ fontSize: "30px"}} />
-          </span>
+          </span> 
           <p>
-            <span>Acerca de mi</span>Soy un desarrollador de software Fron-End creativo, especializado en ReactJS. Ayudo a personas 
-            increíbles a crear e innovar en proyectos web. Desde diseño de interacción, aplicaciones de una 
-            sola página, hasta sistemas de diseño escalables.  
+            <span>Acerca de mí:</span>Ayudo a personas 
+            increíbles a crear e innovar proyectos web. Desde diseño de interacción, hasta sistemas de diseño escalables.  
           </p>
         </div>
 
-        <div className='border animate__animated animate__fadeInLeftBig'></div>
       </div>
     </header>
   );

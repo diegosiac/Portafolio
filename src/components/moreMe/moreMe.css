@@ -7,10 +7,35 @@
 
 .moreMe__Text {
     width: 700px;
+    text-wrap: balance;
+}
+
+.moreMe__name  {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font--suaz);
+    margin-bottom: 20px
+}
+
+.moreMe__name .firstName {
+    margin-right: 7px;
+    color: var(--white--light);
+}
+
+.moreMe__name .lastName {
+    color: var(--text--color-orange);
 }
 
 .moreMe__Text p{
     margin-bottom: 15px;
+}
+
+.moreMe__skills {
+    margin-top: 30px;
+}
+
+.moreMe__skills p{
+    max-width: 400px;
 }
 
 .moreMe__Img {
@@ -22,9 +47,8 @@
     overflow: hidden;
 }
 .moreMe__Img img{
-    width: 280px;
+    width: 210px;
     z-index: 60;
-    filter: sepia(60%);
 }
 
 .moreMe__Img::after {

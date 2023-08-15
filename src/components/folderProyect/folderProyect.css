@@ -1,7 +1,6 @@
 .folder__Container{
     display: flex;
     flex-direction: column;
-    margin: 10px;
 }
 
 .folder__Header {
@@ -41,23 +40,26 @@
 .folder__Links a {
     color: var(--white);
     margin-left: 10px;
-
 }
 
 .folder__Footer h3 {
     color: var(--white);
     font-size: var(--text--size-xl);
+    text-wrap: balance;
 }
 
 .folder__Footer p {
     color: var(--white--light);
-    padding-top: 10px;
+    text-wrap: balance;
 }
 
-.folder__Footer li {
+.folder__tools {
+    display: flex;
+    gap: 7px;
+}
+
+.folder__tools li {
     color: var(--white--dark);
-    display: inline-block;
     font-size: var(--text--size-xxs);
-    margin-right: 10px;
-    text-decoration: none;
+    list-style: none;
 }

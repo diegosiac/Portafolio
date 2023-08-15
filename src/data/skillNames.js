@@ -1,5 +1,5 @@
 export const skillNames = [
-    'JavaScript (ES6+)',
+    'JavaScript',
     'NoSql',
     'React',
     'MongoDB',
@@ -7,8 +7,11 @@ export const skillNames = [
     'FireBase',
     'CSS',
     'Material UI',
-    'Bootstrap',
+    'Cypress',
     'Pruebas Unitarias',
     'Git',
-    'JestJS'
+    'JestJS',
+    'Redux',
+    'Express',
+    'Pruebas E2E'
 ];

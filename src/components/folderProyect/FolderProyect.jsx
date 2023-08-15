@@ -4,7 +4,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import useObserver from '../../hooks/useObserver';
 import './folderProyect.css';
 
-export const FolderProyect = ({imgUrl, name, description, linkProyect, linkRepo, toolsList}) => {
+export const FolderProyect = ({cover, name, description, linkDeploy, linkRepo, toolsList}) => {
   const [margin, setMargin] = useState(false);
 
   const mouseInside = () => setMargin(true);
@@ -33,18 +33,18 @@ export const FolderProyect = ({imgUrl, name, description, linkProyect, linkRepo,
 
   return (
     <div className='folder__Container' onMouseEnter={mouseInside} onMouseLeave={mouseOutside}>
-      <header className='folder__Header'></header>
+      <div className='folder__Header'></div>
       <div className={`folder__Img ${ margin && 'activeImg' }`}>
-        <img src={imgUrl} alt={`Imagen del Proyecto ${name}`} height='200px' width='300px'/>
+        <img src={cover} alt={`Imagen del Proyecto ${name}`} height='200px' width='300px'/>
       </div>
 
-      <footer className='folder__Footer'>
+      <div className='folder__Footer'>
         
         <div className='folder__Links'>
           <a href={linkRepo} target='_blank'>
             <GitHubIcon />
           </a>
-          <a href={linkProyect} target='_blank'>
+          <a href={linkDeploy} target='_blank'>
             <OpenInNewIcon/>
           </a>
         </div>
@@ -52,7 +52,7 @@ export const FolderProyect = ({imgUrl, name, description, linkProyect, linkRepo,
         <h3>{name}</h3>
         <p>{description}</p>
       
-        <ul>
+        <ul className='folder__tools'>
           {
             toolsList.map( tool => (
               <li key={tool}>{tool}</li>
@@ -60,7 +60,7 @@ export const FolderProyect = ({imgUrl, name, description, linkProyect, linkRepo,
           }
         </ul>
         
-      </footer>
+      </div>
 
     </div>
   );

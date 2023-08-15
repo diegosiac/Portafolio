@@ -30,16 +30,16 @@ export const Proyects = () => {
     <article className='proyects__Container'>
       <div className='proyects__FoldersContainer'>
         {
-          proyectList.map( proyect => {
+          proyectList.map(({name, cover, description, linkDeploy, linkRepo, toolsList}) => {
             return(
               <FolderProyect 
-                key={proyect.nameProyect}
-                imgUrl={proyect.imgUrl} 
-                name={proyect.nameProyect} 
-                description={proyect.description} 
-                linkProyect={proyect.linkProyect} 
-                linkRepo={proyect.linkRepo} 
-                toolsList={proyect.toolsList}
+                key={name}
+                name={name}
+                cover={cover}
+                description={description}
+                linkDeploy={linkDeploy}
+                linkRepo={linkRepo}
+                toolsList={toolsList}
               />
             )
           })

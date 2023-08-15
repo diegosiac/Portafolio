@@ -1,8 +1,9 @@
 .header{
-    background-color: var(--palete--dark);
     color: var(--text--color);
     display: flex;
     font-family: var(--font--general);
+    height: 100vh;
+    margin-bottom: 50px;
     justify-content: center;
     width: 100%;
 }
@@ -10,20 +11,17 @@
 .header__container{
     display: flex;
     flex-direction: column;
-    padding: 15px 0 35px;
-    width: 95%;
-}
-
-.header__container h2{
-    font-size: var(--text--size-lg);
+    justify-content: space-around;
+    width: 94%;
 }
 
 .header__Title h1{
     font-size: var(--text--heading);
     letter-spacing: -.10em;
-    line-height: 95px;
+    line-height: 75%;
+    margin: 0;
+    padding-right: 10px;
     word-wrap: break-word;
-    margin: 70px 0px 20px;
 }
 
 .header__Title h1 span{
@@ -49,34 +47,40 @@
 }
 
 .info__Icon svg{   
-    position: absolute;
     animation: motion 1s linear infinite;
+    position: absolute;
 }
 
 @keyframes motion {
     0% {
-        top: 0px;
         opacity: 0;
+        top: 0px;
     }
     50%{
         opacity: 1;
     }
     100% {
-        top: 70px;
         opacity: 0;
+        top: 70px;
     }
 }
 
 .header__info p {    
+    color: var(--palete--light);
     font-size: var(--text--size-lg);
-    width: 260px;
+    text-wrap: balance;
+    width: 270px;
 }
 
 .header__info p span{
-    color: var(--text--color-ligth);
-    font-size: var(--text--size-xs);
+    color: var(--white--dark);
+    font-size: var(--text--size-lg);
     font-weight: bold;
     margin-right: 8px;
+}
+
+.border-bottom {
+    border-bottom: 3px solid var(--palete);
 }
 
 .border {
@@ -89,7 +93,6 @@
 @media (min-width: 768px){
     .header__Title h1{
         font-size: calc(var(--text--heading) + 60px);
-        line-height: 125px;
     }
 }
 
@@ -100,27 +103,7 @@
 
     .header__Title .desktop {
         display: block;
-        letter-spacing: -.10em;
-        line-height: 160px;
         font-size: var(--text--heading--pc);
+        letter-spacing: -.10em;
     }
 }
-
-@media (min-width: 1300px){
-    .header__Title .desktop {
-        letter-spacing: -.14em;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
