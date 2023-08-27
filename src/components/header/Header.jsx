@@ -7,7 +7,7 @@ export const Header = () => {
     <header className='header border-bottom'>
       <div className='header__container animate__animated animate__fadeInDown'>
         
-        <div className='header__Title animate__animated animate__fadeInUpBig'>
+        <div className='text-selection-disable header__Title animate__animated animate__fadeInUpBig'>
           <h1 className='mobile'> 
             <span>F</span>
             <span>R</span>
@@ -15,7 +15,7 @@ export const Header = () => {
             <span>N</span>
             <span>T</span>
             <br/>
-            <span>----</span>
+            <span className='header-text-line'>----</span>
             <span>E</span>
             <span>N</span>
             <span>D</span>
@@ -37,7 +37,7 @@ export const Header = () => {
               <span>O</span>
               <span>N</span>
               <span>T</span>
-              <span>----</span>
+            <span className='header-text-line'>----</span>
               <span>E</span>
               <span>N</span>
               <span>D</span>

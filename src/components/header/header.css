@@ -17,11 +17,15 @@
 
 .header__Title h1{
     font-size: var(--text--heading);
-    letter-spacing: -.10em;
+    letter-spacing: -.199ch;
     line-height: 75%;
     margin: 0;
     padding-right: 10px;
     word-wrap: break-word;
+}
+
+.header-text-line {
+    margin: 0 15px 0 10px;
 }
 
 .header__Title h1 span{
@@ -104,6 +108,5 @@
     .header__Title .desktop {
         display: block;
         font-size: var(--text--heading--pc);
-        letter-spacing: -.10em;
     }
 }
