@@ -30,7 +30,5 @@ export const proyectList = [
         linkDeploy: 'https://cartshopcrud.netlify.app',
         linkRepo: 'https://github.com/diegosiac/PROYECTO-2',
         toolsList: ['JavaScrip', 'CSS', 'HTML']
-    },
-
-
-];
+    }
+]
